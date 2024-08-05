@@ -1,0 +1,18 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build & Deploy to Netlify
+        uses: netlify/actions/deploy-site@v1
+        with:
+          site_id: 87a548d9-3146-4cc3-84b5-4dfde41fa96e 
+          auth_token: ${{ secrets.nfp_MnPteRKm7a5BXzz3D7tH8z8N7ogLfQpy2d0d }} 
+          publish_dir: dist
