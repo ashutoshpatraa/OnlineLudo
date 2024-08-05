@@ -13,6 +13,6 @@ jobs:
       - name: Build & Deploy to Netlify
         uses: netlify/actions/deploy-site@v1
         with:
-          site_id: 87a548d9-3146-4cc3-84b5-4dfde41fa96e 
-          auth_token: ${{ secrets.nfp_MnPteRKm7a5BXzz3D7tH8z8N7ogLfQpy2d0d }} 
+          site_id: 87a548d9-3146-4cc3-84b5-4dfde41fa96e  
+          auth_token: ${{ secrets.NETLIFY_AUTH_TOKEN }} 
           publish_dir: dist
